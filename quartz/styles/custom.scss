@@ -9,6 +9,7 @@
 // those colors ever change.
 // -----------------------------------------------------------------------
 
+
 // Softer, more consistent rounding across the board. The base theme mixes
 // 5px radii everywhere; bumping this slightly (and using it uniformly)
 // is most of what reads as "warm" rather than "sterile docs site."
@@ -41,6 +42,13 @@ $radius-sm: 6px;
 * {
   scrollbar-color: var(--lightgray) transparent;
 }
+
+// headings
+//-- remove first heading
+// .markdown-rendered > h1 {
+//     display: none;
+// }
+
 
 // Keyboard focus should be visible and on-brand, not a default blue ring
 a:focus-visible,

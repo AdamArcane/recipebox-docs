@@ -150,8 +150,25 @@ plugins:
   - source: "@quartz-community/explorer"
     enabled: true
     options:
+      mapFn: |
+        (node) => {
+          if (node.__isWelcome) return
+          if (node.slugSegments && node.slugSegments.length === 0 && node.data) {
+            node.children.unshift({
+              isFolder: false,
+              displayName: (node.data && node.data.title) || 'Welcome',
+              slugSegment: '',
+              slugSegments: [],
+              data: { slug: '' },
+              children: [],
+              __isWelcome: true
+            })
+          }
+        }
       sortFn: |
         (a, b) => {
+          if (a.__isWelcome) return -1
+          if (b.__isWelcome) return 1
           if (a.isFolder === b.isFolder) {
             return (a.displayName || "").localeCompare(b.displayName || "", undefined, { numeric: true, sensitivity: "base" })
           }
