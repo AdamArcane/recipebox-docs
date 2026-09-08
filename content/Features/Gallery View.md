@@ -30,17 +30,32 @@ All filters combine with AND - each one narrows further, and leaving a filter un
 
 - **Search** - matches recipe titles and ingredient names, filtering live as you type.
 - **Folder** - a dropdown of folders that contain in-scope recipes. Selecting one includes its subfolders too.
-- **Favorite only** - show only recipes you've favorited.
 - **Tag** - filter to a specific tag.
-- **Diet / allergen exclusion** - hide recipes matching diets or allergens you choose (the same data used for the [[Health and Safety Warnings|allergen warning banner]], applied here as an exclusion instead).
 - **Minimum rating** - hide recipes below a star threshold.
+- **Favorite only** - show only recipes you've favorited.
 - **Never cooked** - show only recipes with no cook history yet.
+- **Diet / allergen exclusion** - hide recipes matching diets or allergens you choose (the same data used for the [[Health and Safety Warnings|allergen warning banner]], applied here as an exclusion instead).
+
+### Property filters
+
+Beyond the fixed filters above, **+ Property filter** lets you filter on _any_ frontmatter property your recipes actually use - season, cuisine, difficulty, whatever properties you've defined - not just the built-in ones. Each filter row has three parts, in order: the **property**, a **comparison** (equals, contains, is one of, between, before/after a date, within the last N days, and more, depending on the property's type), and the **value**.
+
+- Add as many property filters as you like; like everything else in the panel, they all combine with AND.
+- For **is one of** on a property with a manageable number of distinct values (e.g. a `season` property with spring/summer/fall/winter), you get a checkbox for each observed value instead of typing them out - this is how you filter to, say, season "summer" _and_ type "salad" at once.
+- For typed comparisons like "equals" or "contains," the value field suggests values it's actually seen used for that property as you type.
+- A property filter with no property chosen yet does nothing (it's ignored, not treated as "must be blank") - so adding a blank row never empties the grid; pick a property to make it active.
 
 ## Sorting
 
 Title (A-Z or Z-A), date added, last modified, last cooked (recipes never cooked sort last; requires cook history to be enabled), rating (high to low), or times cooked (high to low). Defaults to title A-Z.
 
-Your last-used filters and sort are remembered the next time you open the gallery.
+## Remembering Filters
+
+By default, every filter (search and sort excepted) resets to its default the next time you open the gallery fresh - from the ribbon, a command, or a folder click. If you'd rather your filters stayed put between sessions, check **Remember filters** in the filter panel (top-right, next to **Clear**); from then on, whatever filters are active when you close the gallery are what you'll see next time you open it.
+
+Going _back_ to the gallery after opening a recipe from it is a separate case and always restores your filters as they were, regardless of the "Remember filters" setting - that's Obsidian navigation history, not a fresh open.
+
+**Clear** resets every active filter back to its default (search stays as-is) and only appears once you actually have a filter active.
 
 ## Results Summary
 
