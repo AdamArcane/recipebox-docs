@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: recipebox.arcanerecipes.com/docs
+  baseUrl: recipebox-docs.arcanerecipes.com
   ignorePatterns:
     - private
     - templates
@@ -149,6 +149,14 @@ plugins:
     enabled: true
   - source: "@quartz-community/explorer"
     enabled: true
+    options:
+      sortFn: |
+        (a, b) => {
+          if (a.isFolder === b.isFolder) {
+            return (a.displayName || "").localeCompare(b.displayName || "", undefined, { numeric: true, sensitivity: "base" })
+          }
+          return a.isFolder ? 1 : -1
+        }
     layout:
       position: left
       priority: 50
