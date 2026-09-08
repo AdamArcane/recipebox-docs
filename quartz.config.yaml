@@ -156,12 +156,15 @@ plugins:
           if (node.slugSegments && node.slugSegments.length === 0 && node.data) {
             node.children.unshift({
               isFolder: false,
-              displayName: (node.data && node.data.title) || 'Welcome',
+              displayName: (node.data && node.data.title && node.data.title !== 'index') ? node.data.title : 'Welcome',
               slugSegment: '',
               slugSegments: [],
               data: { slug: '' },
               children: [],
-              __isWelcome: true
+              __isWelcome: true,
+              map: function () {},
+              sort: function () {},
+              filter: function () { return true }
             })
           }
         }
