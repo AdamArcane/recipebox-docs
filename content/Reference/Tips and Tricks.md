@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Tips and Tricks
 created: 2026-07-01T09:33
 modified: 2026-09-04T14:28
 ---
-
-# Tips and Tricks
 
 A grab-bag of practical tips for getting more out of Recipe Box.
 

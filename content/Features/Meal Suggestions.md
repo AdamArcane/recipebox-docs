@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Meal Suggestions
 created: 2026-07-01T11:00
 modified: 2026-07-10T15:44
 ---
-
-# Meal Suggestions
 
 Recipe Box can recommend recipes from your library using a flexible mode-based suggestion engine, and show you stats about what you actually cook.
 ![[System/Attachments/3-Meal Suggestions and Cooking Stats.png]]

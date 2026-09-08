@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Recipe Export
 created: 2026-07-10T00:00
 modified: 2026-07-10T15:46
 ---
-
-# Recipe Export
 
 Recipe Box can export any recipe in several formats - for sharing, backup, or use in other apps. The export button is in the [[Recipe View]] header.
 ![[System/Attachments/Recipe Export.png]]

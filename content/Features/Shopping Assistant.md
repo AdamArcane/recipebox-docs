@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Shopping Assistant
 created: 2026-07-01T09:26
 modified: 2026-07-21T09:00
 ---
-
-# Shopping Assistant
 
 The Shopping Assistant is Recipe Box's grocery list view - it combines ingredients from your meal plan with any one-off items you add, deduplicates and sums quantities, and groups everything for easy shopping.
 ![[System/Attachments/5-Shopping Assistant.png]]

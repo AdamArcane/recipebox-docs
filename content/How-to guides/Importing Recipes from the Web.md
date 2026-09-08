@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Importing Recipes from the Web
 created: 2026-07-01T09:29
 modified: 2026-09-04T00:00
 ---
-
-# Importing Recipes from the Web
 
 Recipe Box can import a recipe from a URL or from pasted text, parsing out the title, ingredients, instructions, and other details, then let you review and edit everything before creating a ready-to-use recipe note in your vault.
 ![[System/Attachments/1-Importing Recipes from the Web.png]]

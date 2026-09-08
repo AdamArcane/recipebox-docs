@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Customizing Appearance
 created: 2026-07-01T09:30
 modified: 2026-07-01T12:50
 ---
-
-# Customizing Appearance
 
 Recipe Box integrates with the [Style Settings](https://community.obsidian.md/plugins/obsidian-style-settings) plugin, giving you a UI for tweaking the recipe view and Shopping Assistant's layout without writing CSS.
 

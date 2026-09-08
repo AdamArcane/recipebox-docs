@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Settings Reference
 created: 2026-07-01T10:59
 modified: 2026-07-21T14:30
 ---
-
-# Settings Reference
 
 All Recipe Box settings live under **Settings → Recipe Box**, organized into the sections below. Defaults are shown in _italics_.
 

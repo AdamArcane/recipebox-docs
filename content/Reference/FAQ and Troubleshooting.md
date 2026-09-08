@@ -1,10 +1,9 @@
 ---
 publish: true
+title: FAQ and Troubleshooting
 created: 2026-09-04T15:49:51.118Z
-modified: 2026-09-08T12:33:21.926Z
+modified: 2026-09-08T15:29:39.144Z
 ---
-
-# FAQ and Troubleshooting
 
 ## My Note Isn't Opening as a Recipe
 

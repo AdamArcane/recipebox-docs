@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Recipe View
 created: 2026-07-01T09:26
 modified: 2026-07-10T15:48
 ---
-
-# Recipe View
 
 The Recipe View renders a recipe note as an interactive card instead of plain Markdown - ingredients you can scale and add to your grocery list, steps with built-in timers, and at-a-glance info about diet, time, and nutrition.
 

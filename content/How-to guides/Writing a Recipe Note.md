@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Writing a Recipe Note
 created: 2026-07-31T12:52
 modified: 2026-07-31T13:25
 ---
-
-# Writing a Recipe Note
 
 A Recipe Box recipe is a normal Markdown note with some frontmatter properties and two headings - one for ingredients, one for instructions. Everything else in the note is yours; Recipe Box only reads what it needs.
 

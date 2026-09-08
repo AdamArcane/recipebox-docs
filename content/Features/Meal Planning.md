@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Meal Planning
 created: 2026-07-01T09:26
 modified: 2026-07-21T09:00
 ---
-
-# Meal Planning
 
 Recipe Box keeps your meal plan as a single Markdown note (default `Meal Plan.md`), and uses it to automatically build your grocery list.
 

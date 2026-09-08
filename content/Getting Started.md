@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Getting Started
 created: 2026-07-01T09:25
 modified: 2026-09-08T08:32
 ---
-
-# Getting Started
 
 ## Installation
 

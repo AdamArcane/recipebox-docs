@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Customizing the Recipe Header
 created: 2026-07-01T09:30
 modified: 2026-07-01T12:51
 ---
-
-# Customizing the Recipe Header
 
 The recipe view header - title, tags, and badge row - is fully configurable from **Settings → Recipe Box → Recipe view**. You can show or hide frontmatter tags, control how they're formatted, and add, remove, reorder, or reconfigure the badges shown next to the title.
 ![[System/Attachments/Customizing the Recipe Header.png]]

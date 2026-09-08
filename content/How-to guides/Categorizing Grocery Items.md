@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Categorizing Grocery Items
 created: 2026-07-01T13:29:44.101Z
-modified: 2026-09-08T12:33:21.869Z
+modified: 2026-09-08T15:29:39.138Z
 ---
-
-# Categorizing Grocery Items
 
 When grouping by category, Recipe Box needs to decide which category each ingredient belongs to. This is controlled by **Category source**, **Category overrides**, and **Category order** under **Settings → Recipe Box → Categories**.
 

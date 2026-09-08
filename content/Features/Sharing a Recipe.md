@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Sharing a Recipe
 created: 2026-07-14T09:00
 modified: 2026-07-21T14:20
 ---
-
-# Sharing a Recipe
 
 Recipe Box can publish any recipe to a public web page - no Obsidian, account, or Recipe Box installation required to view it. Share a link with anyone and they see a clean, read-only version of the recipe in their browser.
 

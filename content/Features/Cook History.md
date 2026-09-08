@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Cook History
 created: 2026-07-10T16:00
 modified: 2026-07-10T15:40
 ---
-
-# Cook History
 
 Recipe Box can record every time you cook a recipe - with a date, optional notes, and an optional photo. That history is stored as structured frontmatter so it's fully queryable with [Dataview](https://community.obsidian.md/plugins/dataview) or [Obsidian Bases](https://obsidian.md/help/bases), and also used by the [[Meal Suggestions|meal suggester]] to power its scoring rules.
 

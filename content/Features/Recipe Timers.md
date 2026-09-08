@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Recipe Timers
 created: 2026-07-01T09:27
 modified: 2026-07-10T15:18
 ---
-
-# Recipe Timers
 
 Recipe Box can detect cooking times written in your instructions and turn them into one-click timers, so you don't need a separate kitchen timer app.
 ![[System/Attachments/2-Recipe Timers.png]]

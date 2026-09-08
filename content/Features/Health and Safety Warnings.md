@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Health and Safety Warnings
 created: 2026-07-01T09:28
 modified: 2026-07-17T09:35
 ---
-
-# Health and Safety Warnings
 
 Recipe Box can surface a few health and safety cues directly in the recipe view: safe meat cooking temperatures, allergen warnings, and high-glycemic index ingredient flags. None of this is medical advice - it's meant as a helpful nudge, and you should always use your own judgment (and a food thermometer).
 

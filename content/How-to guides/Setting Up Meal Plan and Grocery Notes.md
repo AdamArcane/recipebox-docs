@@ -1,10 +1,9 @@
 ---
 publish: true
+title: Setting Up Meal Plan and Grocery Notes
 created: 2026-07-01T09:31
 modified: 2026-07-01T12:50
 ---
-
-# Setting Up Meal Plan and Grocery Notes
 
 Recipe Box stores your meal plan and grocery list as ordinary notes. **Settings → Recipe Box → Notes & storage** controls where those notes live.
 
