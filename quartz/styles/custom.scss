@@ -1,3 +1,178 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+
+// -----------------------------------------------------------------------
+// RecipeBox docs — warm technical-docs polish on top of the base theme.
+// Everything here reads from the CSS custom properties set by the color
+// palette in quartz.config.yaml, so it stays in sync automatically if
+// those colors ever change.
+// -----------------------------------------------------------------------
+
+// Softer, more consistent rounding across the board. The base theme mixes
+// 5px radii everywhere; bumping this slightly (and using it uniformly)
+// is most of what reads as "warm" rather than "sterile docs site."
+$radius: 8px;
+$radius-sm: 6px;
+
+::selection {
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+// Custom scrollbar, tied to the palette instead of the OS default
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--lightgray);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+
+  &:hover {
+    background-color: var(--gray);
+  }
+}
+* {
+  scrollbar-color: var(--lightgray) transparent;
+}
+
+// Keyboard focus should be visible and on-brand, not a default blue ring
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+// ----- Links -----------------------------------------------------------
+a {
+  text-underline-offset: 3px;
+
+  &.internal {
+    border-radius: $radius-sm;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+}
+
+// ----- Headings ----------------------------------------------------------
+// A quiet accent so section breaks read clearly in long docs without
+// shouting. h1 is the page title area (handled separately by
+// article-title) so this is scoped to in-body headings only.
+article {
+  h2 {
+    position: relative;
+    padding-left: 0.9rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.15em;
+      bottom: 0.2em;
+      width: 3px;
+      border-radius: 999px;
+      background: var(--secondary);
+      opacity: 0.55;
+    }
+  }
+
+  h3 {
+    color: var(--secondary);
+  }
+}
+
+// ----- Blockquotes ---------------------------------------------------
+blockquote {
+  border-radius: 0 $radius-sm $radius-sm 0;
+  background-color: var(--highlight);
+  padding: 0.75rem 1rem;
+}
+
+// ----- Callouts --------------------------------------------------------
+.callout {
+  border-radius: $radius;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+// ----- Code --------------------------------------------------------------
+code {
+  border-radius: $radius-sm;
+  background: var(--highlight);
+  color: var(--secondary);
+}
+
+pre {
+  border-radius: $radius;
+  background-color: var(--lightgray);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.04);
+
+  // the syntax theme sets its own background on the inner <code>; make
+  // sure our block background only shows through as a frame around it
+  & > code {
+    border-radius: $radius-sm;
+  }
+}
+
+// ----- Tables ------------------------------------------------------------
+.table-container {
+  & > table {
+    border-radius: $radius;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+th {
+  background-color: var(--highlight);
+  border-bottom: 2px solid var(--secondary);
+  font-family: var(--headerFont);
+}
+
+tbody tr:nth-child(even) {
+  background-color: color-mix(in srgb, var(--lightgray) 45%, transparent);
+}
+
+// ----- Images --------------------------------------------------------
+img {
+  border-radius: $radius;
+  border: 1px solid var(--lightgray);
+}
+
+// ----- Horizontal rule ---------------------------------------------------
+hr {
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    var(--secondary) 0%,
+    var(--tertiary) 50%,
+    transparent 100%
+  );
+  opacity: 0.5;
+}
+
+// ----- Explorer / sidebar -------------------------------------------------
+// Active page in the file tree gets a warm highlight instead of the
+// default flat tertiary color, so it's easy to spot at a glance.
+.explorer-content ul li > a.active {
+  background-color: var(--highlight);
+  border-radius: $radius-sm;
+  padding: 0.1rem 0.3rem;
+  margin-left: -0.3rem;
+}
+
+// ----- Search modal --------------------------------------------------
+#search-container {
+  & #search-space {
+    border-radius: $radius;
+  }
+}
