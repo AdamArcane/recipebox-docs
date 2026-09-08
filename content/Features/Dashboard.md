@@ -2,7 +2,7 @@
 publish: true
 title: Dashboard
 created: 2026-07-21T09:00
-modified: 2026-07-21T14:17
+modified: 2026-09-08T12:20
 ---
 
 The Dashboard is Recipe Box's home base - a single glance-able view of your recipes, meal plan, grocery list, and any recipes you've shared, with quick actions to jump into anything from one place.

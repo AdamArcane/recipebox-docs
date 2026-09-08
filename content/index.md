@@ -1,8 +1,8 @@
 ---
 publish: true
-title: Recipe Box
+title: Recipe Box Documentation
 created: 2026-07-01T09:25
-modified: 2026-07-21T09:00
+modified: 2026-09-08T12:20
 ---
 
 ![Obsidian release version badge](https://img.shields.io/github/release/AdamArcane/obsidian-recipebox?logo=obsidian\&color=rgb\(125%2C58%2C237\)) ![GitHub License](https://img.shields.io/github/license/AdamArcane/obsidian-recipebox) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AdamArcane/obsidian-recipebox/release.yml)

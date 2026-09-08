@@ -2,7 +2,7 @@
 publish: true
 title: Gallery View
 created: 2026-07-21T09:00
-modified: 2026-07-21T14:17
+modified: 2026-09-08T12:20
 ---
 
 The Gallery is a browsable grid of every recipe in scope - image, title, and badges at a glance - with search, filtering, and sorting to find what you're looking for. Unlike the [[Recipe View]], which shows one recipe at a time, the gallery is a persistent pane you can leave open and return to.
