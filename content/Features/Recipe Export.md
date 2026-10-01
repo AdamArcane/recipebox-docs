@@ -2,7 +2,7 @@
 publish: true
 title: Recipe Export
 created: 2026-07-10T00:00
-modified: 2026-07-10T15:46
+modified: 2026-10-01T16:00
 ---
 
 Recipe Box can export any recipe in several formats - for sharing, backup, or use in other apps. The export button is in the [[Recipe View]] header.
@@ -19,13 +19,15 @@ Recipe Box can export any recipe in several formats - for sharing, backup, or us
 
 Markdown formats save as a new note inside your vault. JSON and JSON-LD trigger a file download to your device instead - they're interchange artifacts, not vault content.
 
+All formats keep ingredient ranges and second measurements. Markdown and JSON-LD write them as text (`2-3 bananas`, `125 g / 4 oz rice sticks`). JSON gives each ingredient a `quantity` (the upper end of a range), plus `quantityMin` when the amount is a range and `alt` (`quantity`, optional `quantityMin`, `unit`) when there is a second measurement. These two fields are left out for ingredients that don't use them.
+
 ## Options
 
 **Include cook history and other sections** - includes your cook history entries and any other non-recipe sections from the note body. On by default.
 
 **Include images** - embeds images in the export where the format supports it. Local vault images are currently omitted with a placeholder marker rather than bundled into the file.
 
-**Export at current multiplier** - only shown when the recipe is scaled (multiplier ≠ 1). Exports ingredient quantities at the current scale instead of the base recipe amounts.
+**Export at current multiplier** - only shown when the recipe is scaled (multiplier ≠ 1). Exports ingredient quantities at the current scale instead of the base recipe amounts. Ranges scale at both ends and second measurements scale too: at 2x, `2-3 bananas` becomes `4-6 bananas` and `125 g / 4 oz rice` becomes `250 g / 8 oz rice`.
 
 ## Output Location
 

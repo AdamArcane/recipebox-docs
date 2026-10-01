@@ -2,7 +2,7 @@
 publish: true
 title: Settings Reference
 created: 2026-07-01T10:59
-modified: 2026-07-21T14:30
+modified: 2026-10-01T14:30
 ---
 
 All Recipe Box settings live under **Settings → Recipe Box**, organized into the sections below. Defaults are shown in _italics_.
@@ -145,6 +145,15 @@ See [[Recipe Export]].
 
 See [[Health and Safety Warnings]].
 
+## Recipe Parser
+
+| Setting | Default | What it does |
+|---|---|---|
+| Unit mappings | _(none)_ | Rows that map one or more aliases (comma-separated, e.g. `tasse, tassen`) to a canonical unit (e.g. `cup`). Added on top of the built-in units; your mappings override built-ins with the same alias. Leave the canonical unit empty to drop the word without recording a unit. A hint appears under a row whose canonical unit isn't built in and isn't used by any other row. |
+| Ingredient filler words | _`of`_ | Comma-separated words (e.g. `of, de, di`) removed right after the quantity or unit (`2 cups of flour` → `flour`). Leave empty to strip nothing. |
+
+See [[Mapping Ingredient Units]].
+
 ## Recipe Import
 
 | Setting | Default | What it does |
@@ -158,7 +167,7 @@ Recipe Box also downloads the recipe's hero image into your vault automatically 
 
 Sharing a recipe has no dedicated settings section - expiry (7/30/90 days) is chosen per-share in the Share dialog, not set globally. See [[Sharing a Recipe]].
 
-The gallery's folder-click settings above live under **Recipe library**, not a separate settings section. See [[Gallery View]]. The Dashboard's cooking activity chart range (2/4/8/12 weeks) is remembered automatically and has no settings-tab control - it's changed from the chart's own dropdown. See [[Dashboard]].
+The gallery's folder-click settings above live under **Recipe library**, not a separate settings section. See [[Gallery View]]. Whether the gallery remembers its filters between sessions is likewise not a settings-tab control - it's the **Remember filters** checkbox inside the gallery's own filter panel. The Dashboard's cooking activity chart range (2/4/8/12 weeks) is remembered automatically and has no settings-tab control - it's changed from the chart's own dropdown. See [[Dashboard]].
 
 ## Commands
 

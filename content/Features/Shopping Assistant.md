@@ -2,7 +2,7 @@
 publish: true
 title: Shopping Assistant
 created: 2026-07-01T09:26
-modified: 2026-07-21T09:00
+modified: 2026-10-01T15:00
 ---
 
 The Shopping Assistant is Recipe Box's grocery list view - it combines ingredients from your meal plan with any one-off items you add, deduplicates and sums quantities, and groups everything for easy shopping.
@@ -33,6 +33,10 @@ Run the **Shopping assistant** command, or open it from the [[Dashboard]]'s groc
 ## Combining and Quantities
 
 Ingredients with the same normalized name and unit are merged into a single line, with quantities summed. If one source has a quantity and another doesn't, the known quantity is kept and both sources are recorded.
+
+A range such as `2-3 bananas` is added using its upper end (`3 bananas`). A second measurement such as the `4 oz` in `125 g / 4 oz rice` is not added; the grocery list uses the first measurement only.
+
+Units only merge when Recipe Box recognizes them as the same unit. If your recipes use localized or nonstandard unit words (`Tassen`, `EL`, `pkg.`), add them as [[Mapping Ingredient Units|unit mappings]] so they merge with the rest of your list.
 
 ## Checking Items Off
 
@@ -81,4 +85,5 @@ The export dialog offers:
 
 - [[Meal Planning]] - how items get onto the grocery list in the first place
 - [[Categorizing Grocery Items]] - customizing categories and grouping
+- [[Mapping Ingredient Units]] - teaching Recipe Box your own unit words so items merge
 - [[Setting Up Meal Plan and Grocery Notes]] - configuring note paths

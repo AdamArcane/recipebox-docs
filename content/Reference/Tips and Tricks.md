@@ -2,7 +2,7 @@
 publish: true
 title: Tips and Tricks
 created: 2026-07-01T09:33
-modified: 2026-09-04T14:28
+modified: 2026-10-01T16:00
 ---
 
 A grab-bag of practical tips for getting more out of Recipe Box.
@@ -11,10 +11,11 @@ A grab-bag of practical tips for getting more out of Recipe Box.
 
 - **Use `#IgnoreIngredient` for staples.** Tag "salt and pepper to taste" or pantry basics you never need to buy with `#IgnoreIngredient` so they stay visible in the recipe but never clutter your grocery list. This only affects ingredients that would be automatically added to the grocery list, not manually selected items.
 - **Tag ingredients for category control.** If the built-in dictionary keeps miscategorizing something, either add a `#Category` tag on that ingredient line (with **Category source** set to "Tag" or "Tag, then dictionary") or add a [[Categorizing Grocery Items|category override]] - the override is less work if it's an ingredient you'll see across many recipes.
-- **Write quantities Recipe Box can parse.** Plain numbers, decimals, fractions (`1/2`, `1 1/2`, `½`), and "a/an" all parse correctly. Avoid burying the quantity mid-sentence if you want it to scale and aggregate cleanly.
+- **Write quantities Recipe Box can parse.** Plain numbers, decimals, fractions (`1/2`, `1 1/2`, `½`), ranges (`2-3`, `1/2 to 3/4`), and "a/an" all parse correctly. Dual measurements like `125 g / 4 oz` work too. See [[Writing a Recipe Note#Ranges and Second Measurements]]. Avoid burying the quantity mid-sentence if you want it to scale and aggregate cleanly.
 - **Group ingredients and steps with subheadings** (`### For the sauce`) for multi-component recipes - Recipe Box preserves these groupings in the recipe view.
 - **Add a source link.** Include `source`, `url`, or `link` in frontmatter for imported recipes - it shows up as a tappable link on mobile.
 - **Use folders for one hierarchy, tags for the rest.** A recipe can only live in one folder, but it can carry any number of tags - if you want a recipe to be both "Dinner" and "Pasta," tag it rather than trying to force a folder structure to do both. Both are filterable in the [[Gallery View]].
+- **Any frontmatter property is filterable in the Gallery, not just the built-in ones.** Add a custom property like `season` or `cuisine` to your recipes and it shows up as a property filter option automatically - no configuration needed. See [[Gallery View#Property filters]].
 
 ## Meal Planning & Shopping
 

@@ -2,7 +2,7 @@
 publish: true
 title: FAQ and Troubleshooting
 created: 2026-09-04T15:49:51.118Z
-modified: 2026-09-08T15:29:39.144Z
+modified: 2026-10-01T14:09:09.469Z
 ---
 
 ## My Note Isn't Opening as a Recipe
@@ -27,14 +27,19 @@ Combine both: folders for the one grouping that matters most to how you browse, 
 - Make sure your ingredient list is a bullet or numbered list directly under a heading matching **Ingredients heading** (default `## Ingredients`).
 - If there's no matching heading, Recipe Box falls back to every bullet list in the note - which can pick up unrelated lists. Add the heading to be safe.
 - Lines like "Salt and pepper to taste" with no leading quantity are still added but with no quantity/unit.
+- If a unit word ends up in the ingredient name (e.g. `tassen mehl` instead of `mehl`), Recipe Box doesn't recognize that unit. Add it as a unit mapping. See [[Mapping Ingredient Units]].
 
 ## An Ingredient Keeps Landing in "Other"
 
 The built-in dictionary doesn't recognize it. Add a [[Categorizing Grocery Items|category override]], or tag it with `#Category` on the ingredient line and switch **Category source** to "Tag" or "Tag, then dictionary".
 
+## A Range Shows Only One Number on My Grocery List
+
+That's intentional. The grocery list needs a single amount, so `2-3 bananas` is added as `3 bananas` (the upper end). The recipe view still shows the full range. Second measurements like `/ 4 oz` are also left off the grocery list. See [[Writing a Recipe Note#Ranges and Second Measurements]].
+
 ## Quantities Aren't Combining the Way I Expect
 
-Items combine when their normalized **name and unit** match exactly. "2 cups flour" and "1 cup all-purpose flour" won't merge if the names normalize differently. Try keeping units and naming consistent across recipes for ingredients you buy often.
+Items combine when their normalized **name and unit** match exactly. "2 cups flour" and "1 cup all-purpose flour" won't merge if the names normalize differently. Try keeping units and naming consistent across recipes for ingredients you buy often. If the units are spelled differently (`Tasse` vs `cup`, `pkg` vs `pack`), add a [[Mapping Ingredient Units|unit mapping]] so Recipe Box treats them as the same unit.
 
 ## I Added/Removed a Recipe from the Meal Plan but the Grocery List Didn't Update
 

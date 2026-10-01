@@ -2,7 +2,7 @@
 publish: true
 title: Recipe Box Documentation
 created: 2026-07-01T09:25
-modified: 2026-09-08T12:20
+modified: 2026-10-01T13:45
 ---
 
 ![Obsidian release version badge](https://img.shields.io/github/release/AdamArcane/obsidian-recipebox?logo=obsidian\&color=rgb\(125%2C58%2C237\)) ![GitHub License](https://img.shields.io/github/license/AdamArcane/obsidian-recipebox) ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/AdamArcane/obsidian-recipebox/release.yml)
@@ -49,6 +49,7 @@ Your recipes belong to you.
 - [[Importing Recipes from the Web]]
 - [[Setting Up Meal Plan and Grocery Notes]]
 - [[Categorizing Grocery Items]]
+- [[Mapping Ingredient Units]]
 - [[Customizing the Recipe Header]]
 - [[Customizing Appearance]]
 

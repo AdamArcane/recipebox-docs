@@ -2,7 +2,7 @@
 publish: true
 title: Importing Recipes from the Web
 created: 2026-07-01T09:29
-modified: 2026-09-04T00:00
+modified: 2026-10-01T16:00
 ---
 
 Recipe Box can import a recipe from a URL or from pasted text, parsing out the title, ingredients, instructions, and other details, then let you review and edit everything before creating a ready-to-use recipe note in your vault.
@@ -14,7 +14,7 @@ Recipe Box can import a recipe from a URL or from pasted text, parsing out the t
 2. Choose **From URL** or **From Text**.
 3. Fill in the form and optionally change the **Save to folder** field (defaults to your configured import folder, or your first recipe folder).
 4. Click **Import** to parse the recipe.
-5. Review the extracted fields - title, servings, times, description, ingredients, instructions, and nutrition - editing anything that needs fixing. Use **← Back** to return to the input form if needed.
+5. Review the extracted fields - title, servings, times, description, ingredients, instructions, and nutrition - editing anything that needs fixing. In the ingredient editor, a range stays in the quantity field (`2-3`) and a second measurement stays in the unit field (`cup / 240 ml`), so both are kept when you save. Use **← Back** to return to the input form if needed.
 6. Click **Save recipe**.
 
 Recipe Box creates a new note and opens it automatically in the [[Recipe View]]. If a note with the same name already exists in that folder, Recipe Box asks whether to overwrite it.

@@ -2,7 +2,7 @@
 publish: true
 title: Recipe View
 created: 2026-07-01T09:26
-modified: 2026-07-10T15:48
+modified: 2026-10-01T16:00
 ---
 
 The Recipe View renders a recipe note as an interactive card instead of plain Markdown - ingredients you can scale and add to your grocery list, steps with built-in timers, and at-a-glance info about diet, time, and nutrition.
@@ -53,7 +53,7 @@ The hero image is resolved from the `image` frontmatter property, which can be a
 A +/- stepper (in increments of 0.5) lets you scale the recipe up or down. Changing it:
 
 - Writes the new value to the `multiplier` frontmatter property, so the scale persists.
-- Recalculates every ingredient quantity shown in the recipe view.
+- Recalculates every ingredient quantity shown in the recipe view, including both ends of a range (`2–3` becomes `4–6` at 2x) and any second measurement.
 - Recalculates nutrition and servings figures shown in the info section.
 
 Quantities added to the grocery list reflect the current multiplier.
@@ -64,7 +64,7 @@ The servings and nutrition cells (calories, protein, fat, carbs) can display eit
 
 ## Ingredient List
 
-Each ingredient line shows its (scaled) quantity, unit, and name, plus:
+Each ingredient line shows its (scaled) quantity, unit, and name. A range is shown with an en dash (`2–3`). A second measurement (e.g. `125 g / 4 oz`) appears on its own smaller line under the first, in parentheses: `(4 oz)`. Metric amounts (`g`, `kg`, `mg`, `ml`, `l`) are shown as rounded decimals rather than fractions, so a scaled `41 2/3 g` reads as `42 g` and `1 1/2 kg` as `1.5 kg`. See [[Writing a Recipe Note#Ranges and Second Measurements]]. Each line also has:
 
 - **Meat temperature badge** - if **Show meat temperature warnings** is enabled and the ingredient is recognized as a meat, fish, or shellfish, Recipe Box shows the USDA-recommended safe minimum internal temperature. See [[Health and Safety Warnings]].
 - **High-GI badge** - if **Diabetic mode** is enabled and the ingredient matches your glycemic-index dictionary, a high-GI badge is shown.
@@ -84,4 +84,4 @@ To add a new cook history entry, use the **Mark as cooked** button in the recipe
 
 ## Related Settings
 
-Most recipe view behavior is controlled from **Settings → Recipe Box → Recipe view**, **Recipe library**, **Nutrition**, **Cooking & tracking**, and **Health & safety**. See [[Settings Reference]] for the full list.
+Most recipe view behavior is controlled from **Settings → Recipe Box → Recipe view**, **Recipe library**, **Nutrition**, **Cooking & tracking**, **Health & safety**, and **Recipe parser** (see [[Mapping Ingredient Units]]). See [[Settings Reference]] for the full list.
