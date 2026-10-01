@@ -2,7 +2,7 @@
 publish: true
 title: Recipe Timers
 created: 2026-07-01T09:27
-modified: 2026-07-10T15:18
+modified: 2026-10-01T17:30
 ---
 
 Recipe Box can detect cooking times written in your instructions and turn them into one-click timers, so you don't need a separate kitchen timer app.
@@ -11,6 +11,8 @@ Recipe Box can detect cooking times written in your instructions and turn them i
 ## How Detection Works
 
 When **Enable timers** is on, Recipe Box scans each instruction step for duration phrases - things like "bake for 25 minutes", "simmer 10-15 minutes", "let rest 1 hour", "cook for 2 hours 30 minutes" - and renders a clickable timer button inline next to the phrase.
+
+Durations inside link text are skipped, so a step mentioning `[[10 Minute Pasta Sauce]]` keeps a normal link instead of getting a timer.
 
 For ranges (e.g. "10-15 minutes"), **Timer range default** controls whether the timer uses the **max** or **min** end of the range.
 

@@ -2,7 +2,7 @@
 publish: true
 title: Writing a Recipe Note
 created: 2026-07-31T12:52
-modified: 2026-10-01T15:00
+modified: 2026-10-01T17:30
 ---
 
 A Recipe Box recipe is a normal Markdown note with some frontmatter properties and two headings - one for ingredients, one for instructions. Everything else in the note is yours; Recipe Box only reads what it needs.
@@ -134,7 +134,7 @@ Rules:
 
 ### Linked Ingredient Names
 
-If an ingredient's name is a Markdown link, e.g. `- [tomato sauce](sauce.md)`, the link text (`tomato sauce`) becomes the ingredient name and displays as a clickable link in the recipe view. A linked ingredient and a plain one with the same name merge on the grocery list - `[tomato sauce](sauce.md)` and a plain `tomato sauce` share one grocery entry. Wikilinks (`[[tomato sauce]]`) are unwrapped the same way, honoring an alias when one is given (e.g. `[[sauce.md|tomato sauce]]`).
+If an ingredient's name is a Markdown link, e.g. `- [tomato sauce](sauce.md)`, the link text (`tomato sauce`) becomes the ingredient name and displays as a clickable link in the recipe view. A linked ingredient and a plain one with the same name merge on the grocery list - `[tomato sauce](sauce.md)` and a plain `tomato sauce` share one grocery entry. Wikilinks (`[[tomato sauce]]`) are unwrapped the same way, honoring an alias when one is given (e.g. `[[sauce.md|tomato sauce]]`). See [[Recipe View#Links]] for how links behave when clicked.
 
 ### Excluding a Line from the Grocery List
 

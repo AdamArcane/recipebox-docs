@@ -2,7 +2,7 @@
 publish: true
 title: Recipe View
 created: 2026-07-01T09:26
-modified: 2026-10-01T16:00
+modified: 2026-10-01T18:00
 ---
 
 The Recipe View renders a recipe note as an interactive card instead of plain Markdown - ingredients you can scale and add to your grocery list, steps with built-in timers, and at-a-glance info about diet, time, and nutrition.
@@ -75,6 +75,18 @@ Lines tagged `#IgnoreIngredient` are shown in the recipe but excluded from groce
 ## Instructions
 
 Steps are shown as a numbered list, grouped under any subheadings used in the note. If **Enable timers** is on, Recipe Box detects duration phrases (e.g. "simmer for 10 minutes") and renders them as clickable timer buttons - see [[Recipe Timers]].
+
+## Links
+
+Wikilinks and Markdown links to other notes work anywhere in the recipe view: ingredients, instructions, notes, and sections opened in their own window. They behave the same as in Obsidian's reading view:
+
+- **Click** opens the note in the current tab. **Ctrl/Cmd-click** or **middle-click** opens it in a new tab.
+- **Hover** while holding Ctrl/Cmd shows a page preview (if the Page Preview core plugin is on). You can change the modifier under **Settings → Core plugins → Page Preview**, where Recipe Box appears as its own source.
+- **Right-click** (long-press on mobile) shows **Open in new tab**, **Open to the right**, and **Open in new window**, followed by the note's file menu.
+- With **Cross off while cooking** on, clicking a link opens it without crossing off the ingredient or step.
+- A link to a note that doesn't exist yet creates it when clicked, as in reading view.
+
+Clicking a link inside a section window closes the window first, so the note isn't hidden behind it.
 
 ## Cook History Tab (Mobile)
 
