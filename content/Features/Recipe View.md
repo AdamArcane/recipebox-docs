@@ -2,7 +2,7 @@
 publish: true
 title: Recipe View
 created: 2026-07-01T09:26
-modified: 2026-10-01T18:00
+modified: 2026-10-02T11:00
 ---
 
 The Recipe View renders a recipe note as an interactive card instead of plain Markdown - ingredients you can scale and add to your grocery list, steps with built-in timers, and at-a-glance info about diet, time, and nutrition.
@@ -17,6 +17,10 @@ If **Auto-open recipe view** is enabled (default), any note that qualifies as a 
 
 You can switch a note between views manually with the **Open as recipe** and **Open as Markdown** commands, or the corresponding icon in the view header.
 
+## Editing a Recipe
+
+The **Edit recipe** icon in the view header (also in the more options menu) opens a structured editor for the title, image, times, servings, ingredients, steps, notes, and nutrition. You can also click the **Ingredients** or **Instructions** heading to jump straight to that section. Only the parts you change are saved. See [[Editing a Recipe]].
+
 ## Header
 
 - **Title** - the note's title, with a star rating widget if you've set a `rating` value.
@@ -27,6 +31,7 @@ You can switch a note between views manually with the **Open as recipe** and **O
 - **Add/remove meal plan button** - adds or removes this recipe from your meal plan. Opens the [[Meal Planning|Add to meal plan]] dialog when adding.
 - **Mark as cooked button** (if **Show mark as cooked button** is enabled) - opens a dialog to record the date, optional notes, and an optional photo for this cook. Stamps `lastMade`, increments `cookedCount`, and appends a new entry to the `cookHistory` array in frontmatter. See [[Cook History]].
 - **Cook mode toggle** (sun icon) - activates the Screen Wake Lock API to keep your device screen on while you cook. Tap the icon again to turn it off. An indicator appears in the tab header while cook mode is active.
+- **Edit recipe button** (file with pencil icon) - opens the recipe editor. The plain pencil icon beside it still switches to Markdown. See [[Editing a Recipe]].
 - **Export button** - opens the export dialog to save or download the recipe in a variety of formats. See [[Recipe Export]].
 
 ## Layout: Desktop vs. Mobile

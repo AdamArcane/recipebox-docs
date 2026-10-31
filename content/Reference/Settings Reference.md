@@ -151,6 +151,7 @@ See [[Health and Safety Warnings]].
 |---|---|---|
 | Unit mappings | _(none)_ | Rows that map one or more aliases (comma-separated, e.g. `tasse, tassen`) to a canonical unit (e.g. `cup`). Added on top of the built-in units; your mappings override built-ins with the same alias. Leave the canonical unit empty to drop the word without recording a unit. A hint appears under a row whose canonical unit isn't built in and isn't used by any other row. |
 | Ingredient filler words | _`of`_ | Comma-separated words (e.g. `of, de, di`) removed right after the quantity or unit (`2 cups of flour` → `flour`). Leave empty to strip nothing. |
+| Preserve ingredient name casing | _Off_ | Shows ingredient names as written in the note instead of lowercasing them, which suits languages that capitalise nouns (`2 Eier`). Grocery list matching still ignores casing. |
 
 See [[Mapping Ingredient Units]].
 

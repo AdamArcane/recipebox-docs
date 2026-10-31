@@ -1,7 +1,7 @@
 ---
 publish: true
 title: Categorizing Grocery Items
-created: 2026-07-01T13:29:44.101Z
+created: 2026-10-15T18:10:17.751Z
 modified: 2026-09-08T15:29:39.138Z
 ---
 

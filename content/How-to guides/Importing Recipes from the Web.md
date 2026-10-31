@@ -2,11 +2,13 @@
 publish: true
 title: Importing Recipes from the Web
 created: 2026-07-01T09:29
-modified: 2026-10-01T16:00
+modified: 2026-10-02T11:00
 ---
 
 Recipe Box can import a recipe from a URL or from pasted text, parsing out the title, ingredients, instructions, and other details, then let you review and edit everything before creating a ready-to-use recipe note in your vault.
 ![[System/Attachments/1-Importing Recipes from the Web.png]]
+
+Moving a whole collection from another app? See [[Importing Recipes from Files]].
 
 ## Importing a Recipe
 
@@ -54,7 +56,7 @@ Before anything is saved, Recipe Box shows an editable review form with the pars
 - **Notes** (optional) - anything that doesn't fit ingredients or instructions, same one-item-per-line format
 - **Nutrition** (calories, protein, fat, carbs)
 
-Edit anything before saving. The `## Heading` convention works the same whether the recipe came from a URL or pasted text.
+Edit anything before saving. The `## Heading` convention works the same whether the recipe came from a URL or pasted text. To change a recipe after it has been created, see [[Editing a Recipe]].
 
 ## Settings
 
@@ -82,6 +84,7 @@ By default, Recipe Box generates a note using a built-in template. To customize 
 | `{{instructions}}` | Numbered instructions (with group headings) |
 | `{{notes}}` | Notes list (with group headings). If there are no notes, the entire heading-through-token block is removed rather than left as an empty heading. |
 | `{{today}}` | Today's date (YYYY-MM-DD) |
+| `{{imageProperty}}` / `{{servingsProperty}}` / `{{prepTimeProperty}}` / `{{cookTimeProperty}}` / `{{totalTimeProperty}}` | The frontmatter property names from your settings (defaults `image`, `servings`, `prepTime`, `cookTime`, `totalTime`). Use these as the key side of a line, e.g. `{{prepTimeProperty}}: {{prepTime}}`, so notes use your configured names. The built-in template does this. |
 
 Note that `{{title}}` is accepted but not used by the built-in template --
 the recipe title always determines the saved file's name regardless of

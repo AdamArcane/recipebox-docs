@@ -1,8 +1,8 @@
 ---
 publish: true
 title: FAQ and Troubleshooting
-created: 2026-09-04T15:49:51.118Z
-modified: 2026-10-01T14:09:09.469Z
+created: 2026-10-15T18:10:21.293Z
+modified: 2026-10-02T14:37:10.740Z
 ---
 
 ## My Note Isn't Opening as a Recipe
@@ -73,6 +73,14 @@ The `## Cook History` section in the note body is managed by Recipe Box and rege
 ## lastMade / cookedCount Don't Match My History
 
 If **Track cook history** is on, `lastMade` and `cookedCount` are derived from the `cookHistory` frontmatter array automatically - they are not independently managed. If these values look wrong, check the `cookHistory` array in the note's frontmatter. Editing `lastMade` or `cookedCount` directly while cook history is on will have no lasting effect, as they'll be overwritten on the next cook.
+
+## Edit Recipe Says a Section Can't Be Changed Safely
+
+The structured editor only handles Ingredients and Steps sections made of single-line list items and group headings. Paragraphs, nested bullets, multi-line steps, quotes, tables, code blocks, and RecipeMD notes all make a section read-only in the editor. Use the **Open as Markdown** button shown in that section to edit it directly. See [[Editing a Recipe#When a Section Can't Be Edited Here]].
+
+## Edit Recipe Won't Save: "This Recipe Changed Since the Editor Was Opened"
+
+The note was modified on disk (often by sync) after you opened the editor, so Recipe Box refused to overwrite it. Nothing was saved. Close the editor, reopen it to load the current note, and redo your edit.
 
 ## I Cleared My Grocery List by Accident
 
