@@ -66,6 +66,25 @@ See [[Recipe Timers]].
 
 See [[Shopping Assistant]] and [[Meal Planning]].
 
+## Integrations
+
+Optional third party integrations live under **Integrations**. Each service has its own page.
+
+### Nextcloud Pantry
+
+| Setting | Default | What it does |
+|---|---|---|
+| Enable Pantry sync | _Off_ | Master switch. While off, nothing runs and no network calls are made. The settings below appear once it is on. |
+| Server address | _(empty)_ | Your Nextcloud address, for example `cloud.example.com`. `https://` is added if missing. |
+| Username | _(empty)_ | Your Nextcloud username. |
+| App password | _(empty)_ | A Nextcloud app password, kept in Obsidian's secret storage. |
+| Test connection | | Checks the address, username and password. |
+| House | _Not chosen_ | The Pantry house that holds your checklist. |
+| Checklist | _Not chosen_ | The checklist to sync with. **Create new list** makes one called "Groceries". |
+| Auto sync every (minutes) | _0 (manual only)_ | Syncs on an interval and shortly after you edit the grocery note. Use on one device only. |
+
+See [[Nextcloud Pantry Sync]].
+
 ## Categories
 
 | Setting | Default | What it does |
@@ -188,5 +207,6 @@ Recipe Box registers these commands (search "Recipe Box" in the Command Palette)
 | Export current recipe | Opens the recipe export dialog for the active recipe note. See [[Recipe Export]]. |
 | Share this recipe | Opens the share dialog for the active recipe note, or manages/revokes its existing link. See [[Sharing a Recipe]]. |
 | Suggest a meal | Opens the meal suggestion dialog. See [[Meal Suggestions]]. |
+| Sync grocery list with Pantry | Syncs the grocery list with your Nextcloud Pantry checklist. Only registered when **Enable Pantry sync** is on. See [[Nextcloud Pantry Sync]]. |
 
 Actions like syncing the grocery list from the meal plan, clearing the meal plan, and exporting the grocery list are buttons inside the [[Shopping Assistant]] and [[Meal Planning|Meal Plan view]] toolbars rather than separate commands.

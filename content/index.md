@@ -36,6 +36,7 @@ Your recipes belong to you.
 - [[Gallery View]]
 - [[Meal Planning]]
 - [[Shopping Assistant]]
+- [[Nextcloud Pantry Sync]]
 - [[Recipe Timers]]
 - [[Meal Suggestions]]
 - [[Cook History]]
@@ -80,6 +81,7 @@ Your recipes belong to you.
 
 - Use the shopping assistant to group your grocery items by category, recipe, source, or a flat list
 - Auto-add ingredients to the grocery list when recipes are added to the meal plan
+- Optionally sync your grocery list with a Nextcloud Pantry checklist, so items you check off in the store show up in Obsidian
 
 ### Start Cooking
 

@@ -84,6 +84,7 @@ The export dialog offers:
 ## Related
 
 - [[Meal Planning]] - how items get onto the grocery list in the first place
+- [[Nextcloud Pantry Sync]] - keep this list in step with the Pantry app on Nextcloud
 - [[Categorizing Grocery Items]] - customizing categories and grouping
 - [[Mapping Ingredient Units]] - teaching Recipe Box your own unit words so items merge
 - [[Setting Up Meal Plan and Grocery Notes]] - configuring note paths

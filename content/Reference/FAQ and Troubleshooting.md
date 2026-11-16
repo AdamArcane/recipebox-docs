@@ -86,9 +86,21 @@ The note was modified on disk (often by sync) after you opened the editor, so Re
 
 **Clear grocery list** clears the grocery list note and Recipe Box's item state immediately, with no in-app undo. If your vault is under version control or has file history (e.g. Obsidian Sync's file recovery), restore the note from there.
 
+## Pantry Sync Says "Not Set Up Yet" or the Dropdowns Are Empty
+
+Pantry sync needs the server address, username, app password, house and checklist all filled in. Press **Test connection** first. If it works but **House** or **Checklist** is empty, press the refresh icon beside it. See [[Nextcloud Pantry Sync]].
+
+## An Item I Checked in Pantry Didn't Check in Obsidian
+
+Run **Sync grocery list with Pantry**, or turn on **Auto sync**. If it still doesn't change and you used Pantry's Shopping Mode, that mode may keep its checks separate until the trip is closed. Checking the item in the normal list view always works.
+
+## Pantry Sync Created a Duplicate Item
+
+This happens when two devices push the same new line at the same time. Turn on **Auto sync** on one device only, then delete the extra item in Pantry. The next sync will not bring it back.
+
 ## Where Is My Data Actually Stored?
 
-In your notes. Recipe metadata (including cook history) lives in each recipe's frontmatter; the meal plan and grocery list are plain Markdown notes at the paths you configure. Recipe Box's plugin data file additionally tracks meal plan entries, one-off items, and which groups you've collapsed - but the notes are the source of truth for what you see.
+In your notes. Recipe metadata (including cook history) lives in each recipe's frontmatter; the meal plan and grocery list are plain Markdown notes at the paths you configure. Recipe Box's plugin data file additionally tracks meal plan entries, one-off items, which groups you've collapsed, and, if you use Pantry sync, which grocery lines are linked to which Pantry items - but the notes are the source of truth for what you see.
 
 ## Still Stuck?
 
