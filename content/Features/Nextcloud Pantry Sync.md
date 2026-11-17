@@ -7,7 +7,7 @@ modified: 2026-11-16T12:00
 
 Pantry sync keeps your grocery list in step with a checklist in the [Pantry](https://github.com/chenasraf/nextcloud-pantry) app for Nextcloud. Check items off on your phone in the store and they are checked in Obsidian. Add or edit items in either place and the other follows.
 
-It is an optional integration, **off by default**. While it is off, Recipe Box makes no network calls and shows none of its commands. Pantry sync is available from version 0.4.0-beta.0.
+It is an optional integration, **off by default**. While it is off, Recipe Box makes no network calls and shows none of its commands. Pantry sync is available from version 0.4.0.
 
 ## What You Need
 
